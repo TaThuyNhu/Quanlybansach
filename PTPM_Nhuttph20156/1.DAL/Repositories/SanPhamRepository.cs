@@ -1,64 +1,71 @@
-﻿//using _1.DAL.Context;
-//using _1.DAL.DomainClass;
-//using _1.DAL.IRepositories;
-//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
+﻿using _1.DAL.Context;
+using _1.DAL.DomainClass;
+using _1.DAL.IRepositories;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-//namespace _1.DAL.Repositories
-//{
-//    public class SanPhamRepository : ISanPhamRepository
-//    {
-//        private FpolyDBContext _dbContext;
-//        List<SanPham> _lstSanPham;
+namespace _1.DAL.Repositories
+{
+    public class SanPhamRepository : ISanPhamRepository
+    {
+        private FpolyDBContext _dbContext;
+        List<Sach> _lstSach;
 
-//        public SanPhamRepository()
-//        {
-//            _dbContext = new FpolyDBContext();
-//            _lstSanPham = new List<SanPham>();
-//        }
+        public SanPhamRepository()
+        {
+            _dbContext = new FpolyDBContext();
+            _lstSach = new List<Sach>();
+        }
 
-//        public bool AddSanPham(SanPham sanPham)
-//        {
-//            if (sanPham == null) return false;
-//            _dbContext.SanPhams.Add(sanPham);
-//            _dbContext.SaveChanges();
-//            return true;
-//        }
+        public bool AddSach(Sach sach)
+        {
+            if (sach == null) return false;
+            _dbContext.Saches.Add(sach);
+            _dbContext.SaveChanges();
+            return true;
+        }
 
+        public bool DeleteSach(Sach sach)
+        {
+            if (sach == null) return false;
+            var tempobj = _dbContext.Saches.FirstOrDefault(c => c.MaSach == sach.MaSach);
+            _dbContext.Saches.Remove(tempobj);
+            _dbContext.SaveChanges();
+            return true;
+        }
+        public List<Sach> GetAll()
+        {
+            _lstSach = _dbContext.Saches.ToList();
+            return _lstSach;
+        }
 
-//        public bool DeleteSanPham(SanPham sanPham)
-//        {
-//            if (sanPham == null) return false;
-//            var tempobj = _dbContext.SanPhams.FirstOrDefault(c => c.Id == sanPham.Id);
-//            _dbContext.SanPhams.Remove(tempobj);
-//            _dbContext.SaveChanges();
-//            return true;
-//        }
+        public Sach GetById(Guid Ma)
+        {
+            throw new NotImplementedException();
+        }
 
-//        public List<SanPham> GetAll()
-//        {
-//            _lstSanPham = _dbContext.SanPhams.ToList();
-//            return _lstSanPham;
-//        }
-
-//        public SanPham GetById(Guid id)
-//        {
-//            throw new NotImplementedException();
-//        }
-
-//        public bool UpdateSanPham(SanPham sanPham)
-//        {
-//            if (sanPham == null) return false;
-//            //obj.Id = Guid.NewGuid();// tu dong zen khoa chinh
-//            var tempobj = _dbContext.SanPhams.FirstOrDefault(c => c.Id == sanPham.Id);
-//            tempobj.Ma = sanPham.Ma;
-//            tempobj.Ten = sanPham.Ten;            
-//            _dbContext.SanPhams.Update(tempobj);
-//            _dbContext.SaveChanges();
-//            return true;
-//        }
-//    }
-//}
+        public bool UpdateSach(Sach sach)
+        {
+            if (sach == null) return false;
+            //obj.Id = Guid.NewGuid();// tu dong zen khoa chinh
+            var tempobj = _dbContext.Saches.FirstOrDefault(c => c.MaSach == sach.MaSach);
+            tempobj.MaTheLoaiChiTiet = sach.MaTheLoaiChiTiet;
+            tempobj.NgayXuatBan = sach.NgayXuatBan;
+            tempobj.SoTrang = sach.SoTrang;
+            tempobj.SoLuong = sach.SoLuong;
+            tempobj.MoTa = sach.MoTa;
+            tempobj.TacGia = sach.TacGia;
+            tempobj.NgayNhap = sach.NgayNhap;
+            tempobj.NgayXuat = sach.NgayXuat;
+            tempobj.SoLuongConLai = sach.SoLuongConLai;
+            tempobj.TrangThai = sach.TrangThai;
+            _dbContext.Saches.Update(tempobj);
+            _dbContext.SaveChanges();
+            return true;
+        }
+       
+    }
+}

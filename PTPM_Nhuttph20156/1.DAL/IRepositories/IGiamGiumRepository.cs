@@ -12,6 +12,8 @@ namespace _1.DAL.IRepositories
         bool AddGiamGia(GiamGium gg);
         bool UpdateGiamGia(GiamGium gg);
         bool DeleteGiamGia(GiamGium gg);
+        GiamGium GetById(Guid Ma); // phuong thuc tim san pham theo ID
+
         List<GiamGium> GetAll();
 
     }
