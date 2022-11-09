@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "crXRDl0yw/6sERmHsDsHcZXCR8T7BRLyiyb4Q2MRDs7nn6/bGFU9WIgfFE8lWMLyOAqbgsmwnFyLi9j3/nhhRw==",
+  "dgSpecHash": "NQGsdFhDxAMlWOJHjgSe83YMqCwdlvKI829JRvY8Ilb2gLncDGwbSgsT1FoPxfWZS3k2oW2tk4N9bTnzQ0ZD5A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\FPTSHOP\\Desktop\\PTPM_Nhuttph20156\\1.DAL\\1.DAL.csproj",
+  "projectFilePath": "C:\\Users\\FPTSHOP\\Desktop\\QLBS\\Quanlybansach\\PTPM_Nhuttph20156\\1.DAL\\1.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\FPTSHOP\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\FPTSHOP\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

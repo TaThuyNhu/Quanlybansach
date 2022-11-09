@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Yu9b1WuSdXQS4jVBXjFEBITdPnjoHJRUebIoASsaM1wEUihUgcaxrnVBxuZdPsWkKGfNdSF/kXhJklNTxOZsxw==",
+  "dgSpecHash": "v/H9MF4Rfd7mkDd6Q0klqKmLPmktr+H1sd0FXdVgZRq6Y3A2FFxcMe4WoJFpXzo1pJ21ZNXpxDDAO1+AQsaJBg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\FPTSHOP\\Desktop\\PTPM_Nhuttph20156\\3.PL\\3.PL.csproj",
+  "projectFilePath": "C:\\Users\\FPTSHOP\\Desktop\\QLBS\\Quanlybansach\\PTPM_Nhuttph20156\\3.PL\\3.PL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\FPTSHOP\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\FPTSHOP\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

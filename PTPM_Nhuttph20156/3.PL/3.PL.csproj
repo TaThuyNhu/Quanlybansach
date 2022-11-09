@@ -9,12 +9,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\2.BUS\2.BUS.csproj" />
+    <Compile Remove="Utilities\**" />
+    <Compile Remove="Views\**" />
+    <EmbeddedResource Remove="Utilities\**" />
+    <EmbeddedResource Remove="Views\**" />
+    <None Remove="Utilities\**" />
+    <None Remove="Views\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Utilities\" />
-    <Folder Include="Views\" />
+    <ProjectReference Include="..\2.BUS\2.BUS.csproj" />
   </ItemGroup>
 
 </Project>
