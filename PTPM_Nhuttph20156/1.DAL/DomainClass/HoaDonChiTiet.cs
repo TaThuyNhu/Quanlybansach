@@ -24,7 +24,8 @@ namespace _1.DAL.DomainClass
         [StringLength(50)]
         public string MaGiamGia { get; set; }
         public int? GiaGoc { get; set; }
-        public int? GiaCuoi { get; set; }
+        public int? GiaBan { get; set; }
+        public int? SoLuong { get; set; }
         public int TrangThai { get; set; }
 
         [ForeignKey(nameof(MaGiamGia))]

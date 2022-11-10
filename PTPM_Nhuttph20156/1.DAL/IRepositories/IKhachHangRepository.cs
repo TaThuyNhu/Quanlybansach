@@ -13,6 +13,6 @@ namespace _1.DAL.IRepositories
         bool UpdateKhachHang(KhachHang kh);
         bool DeleteKhachHang(KhachHang kh);
         KhachHang GetById(Guid Ma); // phuong thuc tim san pham theo ID
-        List<KhachHang> GetAll();
+        List<KhachHang> GetAllKhachHang();
     }
 }

@@ -26,6 +26,7 @@ namespace _1.DAL.DomainClass
         [Column(TypeName = "datetime")]
         public DateTime ThoiHan { get; set; }
         public double PhanTram { get; set; }
+        public int TrangThai { get; set; }
 
         [InverseProperty(nameof(HoaDonChiTiet.MaGiamGiaNavigation))]
         public virtual ICollection<HoaDonChiTiet> HoaDonChiTiets { get; set; }

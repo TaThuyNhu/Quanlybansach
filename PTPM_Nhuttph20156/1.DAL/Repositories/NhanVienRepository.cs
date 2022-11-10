@@ -12,11 +12,11 @@ namespace _1.DAL.Repositories
 {
     public class NhanVienRepository : INhanVienRepository
     {
-        private FpolyDBContext _dBContext;
+        private Nhom678 _dBContext;
         List<NhanVien> _NhanVienList;
         public NhanVienRepository()
         {
-            _dBContext = new FpolyDBContext();
+            _dBContext = new Nhom678();
             _NhanVienList = new List<NhanVien>();
         }
 
@@ -37,8 +37,7 @@ namespace _1.DAL.Repositories
             _dBContext.SaveChanges();
             return true;
         }
-
-        public List<NhanVien> GetAll()
+        public List<NhanVien> GetAllNhanVien()
         {
             _NhanVienList = _dBContext.NhanViens.ToList();
             return _NhanVienList;
@@ -61,7 +60,7 @@ namespace _1.DAL.Repositories
             obj.SoDienThoai = nv.SoDienThoai;
             obj.Email = nv.Email;
             obj.TrangThai = nv.TrangThai;
-          
+
             _dBContext.Update(obj);
             _dBContext.SaveChanges();
             return true;

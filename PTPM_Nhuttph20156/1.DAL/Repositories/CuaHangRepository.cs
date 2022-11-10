@@ -12,11 +12,11 @@ namespace _1.DAL.Repositories
 {
     public class CuaHangRepository : ICuaHangRepository
     {
-        private FpolyDBContext _dBContext;
+        private Nhom678 _dBContext;
         List<CuaHang> _CuaHangList;
         public CuaHangRepository()
         {
-            _dBContext = new FpolyDBContext();
+            _dBContext = new Nhom678();
             _CuaHangList = new List<CuaHang>();
         }
 
@@ -59,7 +59,7 @@ namespace _1.DAL.Repositories
             //temp.Ma = obj.Ma;
             temp.TenCh = obj.TenCh;
             temp.DiaChi = obj.DiaChi;
-            
+            temp.TrangThai=obj.TrangThai;
             _dBContext.CuaHangs.Update(temp);
             _dBContext.SaveChanges();
             return true;

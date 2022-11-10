@@ -12,11 +12,11 @@ namespace _1.DAL.Repositories
 {
     public class ChucVuRepository : IChucVuRepository
     {
-        private FpolyDBContext _dBContext;
+        private Nhom678 _dBContext;
         List<ChucVu> _chucVuList;
         public ChucVuRepository()
         {
-            _dBContext = new FpolyDBContext();
+            _dBContext = new Nhom678();
             _chucVuList = new List<ChucVu>();
         }
 

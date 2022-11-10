@@ -24,9 +24,7 @@ namespace _1.DAL.DomainClass
         public string HoTen { get; set; }
         public bool GioiTinh { get; set; }
         public int Tuoi { get; set; }
-        [Required]
-        [StringLength(50)]
-        public string Sdt { get; set; }
+        public int SoDienThoai { get; set; }
         [Required]
         [StringLength(50)]
         public string Email { get; set; }

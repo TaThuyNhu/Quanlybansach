@@ -11,12 +11,12 @@ namespace _1.DAL.Repositories
 {
     public class SanPhamRepository : ISanPhamRepository
     {
-        private FpolyDBContext _dbContext;
+        private Nhom678 _dbContext;
         List<Sach> _lstSach;
 
         public SanPhamRepository()
         {
-            _dbContext = new FpolyDBContext();
+            _dbContext = new Nhom678();
             _lstSach = new List<Sach>();
         }
 
@@ -36,7 +36,8 @@ namespace _1.DAL.Repositories
             _dbContext.SaveChanges();
             return true;
         }
-        public List<Sach> GetAll()
+        
+        public List<Sach> GetAllSach()
         {
             _lstSach = _dbContext.Saches.ToList();
             return _lstSach;
@@ -66,6 +67,6 @@ namespace _1.DAL.Repositories
             _dbContext.SaveChanges();
             return true;
         }
-       
+
     }
 }

@@ -7,13 +7,13 @@ using _1.DAL.DomainClass;
 
 namespace _1.DAL.Context
 {
-    public partial class FpolyDBContext : DbContext
+    public partial class Nhom678 : DbContext
     {
-        public FpolyDBContext()
+        public Nhom678()
         {
         }
 
-        public FpolyDBContext(DbContextOptions<FpolyDBContext> options)
+        public Nhom678(DbContextOptions<Nhom678> options)
             : base(options)
         {
         }
@@ -45,7 +45,7 @@ namespace _1.DAL.Context
             modelBuilder.Entity<ChucVu>(entity =>
             {
                 entity.HasKey(e => e.MaCv)
-                    .HasName("PK__ChucVu__27258E76172084A5");
+                    .HasName("PK__ChucVu__27258E7626DD3CC8");
 
                 entity.Property(e => e.MaCv).IsUnicode(false);
             });
@@ -53,7 +53,7 @@ namespace _1.DAL.Context
             modelBuilder.Entity<CuaHang>(entity =>
             {
                 entity.HasKey(e => e.MaCh)
-                    .HasName("PK__CuaHang__27258E00692B2264");
+                    .HasName("PK__CuaHang__27258E00D0778CBD");
 
                 entity.Property(e => e.MaCh).IsUnicode(false);
             });
@@ -61,7 +61,7 @@ namespace _1.DAL.Context
             modelBuilder.Entity<GiamGium>(entity =>
             {
                 entity.HasKey(e => e.MaGg)
-                    .HasName("PK__GiamGia__2725AE82EE0B3959");
+                    .HasName("PK__GiamGia__2725AE827056D97E");
 
                 entity.Property(e => e.MaGg).IsUnicode(false);
             });
@@ -69,7 +69,7 @@ namespace _1.DAL.Context
             modelBuilder.Entity<HoaDon>(entity =>
             {
                 entity.HasKey(e => e.MaHoaDon)
-                    .HasName("PK__HoaDon__835ED13B3620A109");
+                    .HasName("PK__HoaDon__835ED13BADB8F5A0");
 
                 entity.Property(e => e.MaHoaDon).IsUnicode(false);
 
@@ -93,7 +93,7 @@ namespace _1.DAL.Context
             modelBuilder.Entity<HoaDonChiTiet>(entity =>
             {
                 entity.HasKey(e => e.MaHoaDonChiTiet)
-                    .HasName("PK__HoaDonCh__6C2FD0CE90E30EA8");
+                    .HasName("PK__HoaDonCh__6C2FD0CE9FDA401E");
 
                 entity.Property(e => e.MaHoaDonChiTiet).IsUnicode(false);
 
@@ -125,19 +125,17 @@ namespace _1.DAL.Context
             modelBuilder.Entity<KhachHang>(entity =>
             {
                 entity.HasKey(e => e.MaKhachHang)
-                    .HasName("PK__KhachHan__88D2F0E55D74978C");
+                    .HasName("PK__KhachHan__88D2F0E56A3275A6");
 
                 entity.Property(e => e.MaKhachHang).IsUnicode(false);
 
                 entity.Property(e => e.Email).IsUnicode(false);
-
-                entity.Property(e => e.Sdt).IsUnicode(false);
             });
 
             modelBuilder.Entity<NhanVien>(entity =>
             {
                 entity.HasKey(e => e.MaNhanVien)
-                    .HasName("PK__NhanVien__77B2CA479E83A77A");
+                    .HasName("PK__NhanVien__77B2CA477C70CA95");
 
                 entity.Property(e => e.MaNhanVien).IsUnicode(false);
 
@@ -163,7 +161,7 @@ namespace _1.DAL.Context
             modelBuilder.Entity<Sach>(entity =>
             {
                 entity.HasKey(e => e.MaSach)
-                    .HasName("PK__Sach__B235742D1B3E6836");
+                    .HasName("PK__Sach__B235742D76A66F56");
 
                 entity.Property(e => e.MaSach).IsUnicode(false);
 
@@ -179,7 +177,7 @@ namespace _1.DAL.Context
             modelBuilder.Entity<TheLoai>(entity =>
             {
                 entity.HasKey(e => e.MaTheLoai)
-                    .HasName("PK__TheLoai__D73FF34A77ABC0C2");
+                    .HasName("PK__TheLoai__D73FF34A48A94ECB");
 
                 entity.Property(e => e.MaTheLoai).IsUnicode(false);
             });
@@ -187,7 +185,7 @@ namespace _1.DAL.Context
             modelBuilder.Entity<TheLoaiChiTiet>(entity =>
             {
                 entity.HasKey(e => e.MaTheLoaiChiTiet)
-                    .HasName("PK__TheLoaiC__7B2AE26BAD4A84B6");
+                    .HasName("PK__TheLoaiC__7B2AE26B7B25F194");
 
                 entity.Property(e => e.MaTheLoaiChiTiet).IsUnicode(false);
 

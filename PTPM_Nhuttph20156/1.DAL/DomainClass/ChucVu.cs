@@ -24,6 +24,7 @@ namespace _1.DAL.DomainClass
         [Column("TenCV")]
         [StringLength(50)]
         public string TenCv { get; set; }
+        public int TrangThai { get; set; }
 
         [InverseProperty(nameof(NhanVien.MaChucVuNavigation))]
         public virtual ICollection<NhanVien> NhanViens { get; set; }

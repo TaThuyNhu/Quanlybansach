@@ -28,8 +28,9 @@ namespace _1.DAL.DomainClass
         [Column(TypeName = "datetime")]
         public DateTime NgayTaoDon { get; set; }
         [Column(TypeName = "datetime")]
-        public DateTime NguoiTaoDon { get; set; }
-        public int? Gia { get; set; }
+        public DateTime NgayShip { get; set; }
+        [Column(TypeName = "datetime")]
+        public DateTime NgayNhan { get; set; }
         public int TrangThai { get; set; }
 
         [ForeignKey(nameof(MaKhachHang))]

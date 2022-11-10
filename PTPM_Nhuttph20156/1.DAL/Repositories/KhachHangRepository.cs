@@ -11,11 +11,11 @@ namespace _1.DAL.Repositories
 {
     public class KhachHangRepository : IKhachHangRepository
     {
-        private FpolyDBContext _dbContext;
+        private Nhom678 _dbContext;
         List<KhachHang> _lstKH;
         public KhachHangRepository()
         {
-            _dbContext = new FpolyDBContext();
+            _dbContext = new Nhom678();
             _lstKH = new List<KhachHang>();
 
         }
@@ -37,7 +37,7 @@ namespace _1.DAL.Repositories
             return true;
         }
 
-        public List<KhachHang> GetAll()
+        public List<KhachHang> GetAllKhachHang()
         {
             _lstKH = _dbContext.KhachHangs.ToList();
             return _lstKH;
@@ -57,7 +57,7 @@ namespace _1.DAL.Repositories
             temp.HoTen = kh.HoTen;
             temp.GioiTinh = kh.GioiTinh;
             temp.Tuoi = kh.Tuoi;
-            temp.Sdt = kh.Sdt;
+            temp.SoDienThoai = kh.SoDienThoai;
             temp.Email = kh.Email;
             temp.DiaChi = kh.DiaChi;
             temp.TrangThai = kh.TrangThai;

@@ -27,6 +27,7 @@ namespace _1.DAL.DomainClass
         [Required]
         [StringLength(50)]
         public string DiaChi { get; set; }
+        public int TrangThai { get; set; }
 
         [InverseProperty(nameof(NhanVien.MaChNavigation))]
         public virtual ICollection<NhanVien> NhanViens { get; set; }
