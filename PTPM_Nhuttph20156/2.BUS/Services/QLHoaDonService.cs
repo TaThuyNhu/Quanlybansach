@@ -35,7 +35,7 @@ namespace _2.BUS.Services
                 NgayShip = hoaDonView.NgayShip,
                 TrangThai = hoaDonView.TrangThai,
             };
-            //if (hoaDonView.Add(temp))
+            if (HoaDonRepository.AddHoaDon(temp))
                 return "Them thanh cong";
             return "Them khong thanh cong";
         }
@@ -55,7 +55,7 @@ namespace _2.BUS.Services
                 NgayShip = hoaDonView.NgayShip,
                 TrangThai = hoaDonView.TrangThai,
             };
-            //if (hoaDonView.Delete(temp))
+            if (HoaDonRepository.AddHoaDon(temp))
                 return "Xoa thanh cong";
             return "Xoa khong thanh cong";
         }
@@ -93,7 +93,7 @@ namespace _2.BUS.Services
                 NgayShip = hoaDonView.NgayShip,
                 TrangThai = hoaDonView.TrangThai,
             };
-            //if (hoaDonView.Update(temp))
+            if (HoaDonRepository.AddHoaDon(temp))
                 return "Sua thanh cong";
             return "Sua khong thanh cong";
         }
