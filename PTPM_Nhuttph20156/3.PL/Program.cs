@@ -1,3 +1,4 @@
+using _3.PL.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,13 +19,8 @@ namespace _3.PL
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new FrmAll());
-            //testtestestest
-            //testtestestest
-            //testtestestest
-            //testtestestest
-            //testtestestest
-            //hahahahah
+            Application.Run(new FrmMenu());
+            
         }
     }
 }
